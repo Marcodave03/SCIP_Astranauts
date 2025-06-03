@@ -59,7 +59,7 @@ export function RiskAlerts() {
             <div className="flex-1 space-y-1">
               <div className="flex items-center justify-between">
                 <p className="font-medium text-sm">{alert.type}</p>
-                <Badge variant={getSeverityColor(alert.severity) as any}>{alert.severity}</Badge>
+                <Badge variant={getSeverityColor(alert.severity)}>{alert.severity}</Badge>
               </div>
               <p className="text-sm text-muted-foreground">{alert.client}</p>
               <p className="text-sm">{alert.message}</p>
